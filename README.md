@@ -1,4 +1,6 @@
 # jwt-tiny
+[![npm version](https://badge.fury.io/js/jwt-tiny.svg)](https://badge.fury.io/js/jwt-tiny)
+![size](http://img.badgesize.io/digplan/jwt-tiny/master/index.mjs)
 
 Zero dependency, pure JS, tiny JWT for servers.
 
