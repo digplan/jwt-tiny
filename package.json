@@ -1,5 +1,6 @@
 {
-  "name": "jwt-small",
+  "name": "jwt-tiny",
   "version": "1.0.0",
-  "main": "index.mjs"
+  "main": "index.mjs",
+  "type": "module"
 }
