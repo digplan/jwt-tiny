@@ -1,3 +1,10 @@
-# node-ysdha9
+# jwt-tiny
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-ysdha9)
+Zero dependency, pure JS, tiny JWT for servers.
+
+```js
+const jwt = new JWT(secret);
+const jwtstr = jwt.create(payload);
+console.log(jwtstr);  // JWT string
+console.log(jwt.verify(jwtstr));  // Payload, or false if invalid signature
+```
