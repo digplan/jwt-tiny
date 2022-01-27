@@ -1,6 +1,7 @@
 {
   "name": "jwt-tiny",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.mjs",
-  "type": "module"
+  "type": "module",
+  "bin": "./test.mjs"
 }

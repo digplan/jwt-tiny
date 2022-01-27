@@ -4,6 +4,10 @@
 
 Zero dependency, pure JS, tiny JWT for servers.
 
+Run tests
+
+> npx jwt-tiny
+
 ```js
 const {JWT} = import('jwt-tiny');
 const secret = 'your-256-bit-secret';

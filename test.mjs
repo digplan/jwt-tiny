@@ -12,4 +12,9 @@ const payload = {
 const jwt = new JWT(secret);
 const jwtstr = jwt.create(payload);
 const verify = jwt.verify(jwtstr);
-console.log(jwtstr, verify);
+console.log('JWT is', jwtstr);
+console.log('Verified is ', !!verify);
+console.log('Payload is ', verify);
+
+const verify_fail = jwt.verify('invalid');
+console.log('Verify a bad string. Verified is ', !!verify_fail);
