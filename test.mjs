@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { JWT } from './index.mjs';
 
 // Don't use this secret for anything. Testing only.
