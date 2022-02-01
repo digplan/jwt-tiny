@@ -12,8 +12,9 @@ class JWT {
     this.key = private_key;
   }
   create(payload) {
-    const header = replaceChars(btoa('{"typ":"JWT","alg":"HS256"}'));
-    payload = replaceChars(btoa(JSON.stringify(payload)));
+    const alg = '{"typ":"JWT","alg":"HS256"}';
+    const header = replaceChars(Buffer.from(alg).toString('base64'));
+    payload = replaceChars(Buffer.from(JSON.stringify(payload)).toString('base64'));
     const signature = this.sign(header, payload);
     return `${header}.${payload}.${signature}`;
   }
@@ -25,7 +26,7 @@ class JWT {
   }
   verify(jwt) {
     const [header, payload, signature] = jwt.split('.');
-    return this.sign(header, payload) === signature ? atob(payload) : false;
+    return this.sign(header, payload) === signature ? Buffer.from(payload, 'base64').toString('utf-8') : false;
   }
 }
 
