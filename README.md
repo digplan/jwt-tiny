@@ -1,8 +1,7 @@
 # jwt-tiny
-<img class="orb" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIzMCIgZmlsbD0idXJsKCNwYWludDBfcmFkaWFsXzE4Ml8yKSIvPjxkZWZzPjxyYWRpYWxHcmFkaWVudCBpZD0icGFpbnQwX3JhZGlhbF8xODJfMiIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgzMCAzMCkgcm90YXRlKDkwKSBzY2FsZSgzMCAzMCkiPjxzdG9wIHN0b3AtY29sb3I9IiM2MGE1ZmEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2MGE1ZmEiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48L3N2Zz4=" alt="JWT Tiny Logo">
 
 [![npm version](https://badge.fury.io/js/jwt-tiny.svg)](https://badge.fury.io/js/jwt-tiny)
-![size](http://img.badgesize.io/digplan/jwt-tiny/master/index.mjs)
+![size](http://img.badgesize.io/digplan/jwt-tiny/master/module.mjs)
 
 A lightweight, zero-dependency JWT (JSON Web Token) implementation for Node.js and modern browsers. Perfect for server-side authentication and data exchange.
 
