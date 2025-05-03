@@ -33,19 +33,22 @@ const jwt = new JWT(secret)
 const payload = {
   name: "John Doe",
   roles: ["admin"],
-  iat: +new Date() // issued at timestamp
+  iat: +new Date(), // issued at timestamp
+  exp: +new Date() + (60 * 60 * 1000) // expires in 1 hour
 }
 
 // Create a JWT token
 const token = jwt.create(payload)
 
 // Verify and decode the token
-const verifiedPayload = jwt.verify(token)
-const jsonPayload = jwt.verifyJSON(token)
-
-console.log('Token:', token)
-console.log('Verified Payload:', verifiedPayload)
-console.log('JSON Payload:', jsonPayload)
+const verifiedPayload = jwt.verifyJSON(token)
+if (!verifiedPayload) {
+  console.log('Invalid token')
+} else if (verifiedPayload.exp < +new Date()) {
+  console.log('Token has expired')
+} else {
+  console.log('Token is valid:', verifiedPayload)
+}
 ```
 
 ## API Reference
