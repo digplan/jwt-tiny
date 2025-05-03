@@ -1,0 +1,9 @@
+{
+  "name": "jwt-tiny",
+  "version": "1.0.6",
+  "main": "module.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  }
+}
